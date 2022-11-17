@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>Spot the differences</title>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="flex-1">
+                <nav>
+                    <h2>Choose image:</h2>
+                    <ul>
+                        <li><a href="#">Dinossaurs</a></li>
+                        <li><a href="#">Cat in a Plane</a></li>
+                        <li><a href="#">Party in the woods</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="flex-2">
+                <img src="dinossaurs.jpg" alt="dinossaurs" usemap="#difference" style="height:700px;">
+                <map name="difference">
+                    <area shape="circle" coords="410,428,88" alt="tree" title="Tree" onclick="check()">
+                    <area shape="rect" coords="237,423,257,433" alt="eyes" title="Eyes">
+                    <area shape="rect" coords="276,522,315,553" alt="legs" title="Legs">
+                    <area shape="circle" coords="476,654,14" alt="flower" title="Flower">
+                    <area shape="poly" coords="273,567,308,573,356,532,431,605,396,647,322,648" alt="dino" title="Dinossaur">
+                    <area shape="poly" coords="448,526,479,486,506,521" alt="back fin" title="Back Fin">
+                </map>
+            </div>
+            <div class="flex-3">
+                <h2>** 6 Differneces **</h2>
+                <p>Find the 6 differences between the two images</p>
+                <p>Click on each difference to mark it</p>
+            </div>
+        </div>
+
+        <script>
+            function check(){
+                
+            }
+        </script>
+    </body>
+</html>
